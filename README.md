@@ -1,4 +1,4 @@
-These notebook utilize historical data of silver prices from 2020 to 2023. The data was imported using Yahoo finance. 
+These notebooks utilize historical data of silver prices from 2020 to 2023. The data was imported using Yahoo finance. 
 
 [This visualization notebook](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-Visualization.ipynb) contains plots showing the trends of silver prices in the desired time period.
 
