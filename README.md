@@ -1,11 +1,35 @@
-These notebooks utilize historical data of silver prices from 2020 to 2023. The data was imported using Yahoo finance. 
+# Silver Price Analysis
 
-[This visualization notebook](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-Visualization.ipynb) contains plots showing the trends of silver prices in the desired time period.
+This repository contains notebooks analyzing historical silver prices from 2020 to 2023 using various machine learning models.
+Note: All notebooks have been created using Google Colab and hence did not require additional downloads.
 
-[The linear regression notebook](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-LinearRegression.ipynb) tries to make a prediction using the linear regression model built into Scikit. This is the simplest model covered in this repository.
+## Notebooks Overview
 
-[Random forest regressor](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-RandomForestRegressor.ipynb) is the next machine learning model that is used in this repository to try to make predictions. 
+- [**Visualization Notebook**](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-Visualization.ipynb): Contains plots showing the trends of silver prices from 2020 to 2023.
+- [**Linear Regression Notebook**](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-LinearRegression.ipynb): Attempts to make predictions using the linear regression model built into Scikit-learn.
+- [**Random Forest Regressor Notebook**](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-RandomForestRegressor.ipynb): Utilizes the random forest regressor model to predict silver prices.
+- [**LSTM Notebook**](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-LSTM.ipynb): Implements a deep learning model (LSTM) for predicting silver prices.
+- [**PyCaret Notebook**](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-Pycaret-ExtraTreesRegression.ipynb): Applies PyCaret to find the best model for the dataset, ending up with extra trees regression.
 
-The deep learning model [LSTM](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-LSTM.ipynb) was then employed for the same purpose with hopes of a better prediction. 
+## Usage
 
-Ultimately, when this fares a worse outcome than the models before, we apply PyCaret to find the best model for this data set and end up with [extra trees regression](https://github.com/ann-o-maly/Silver-Prices-2020-2023-Analysis/blob/main/SilverPrices-Pycaret-ExtraTreesRegression.ipynb) which seems to work the best compared to all the above models that were tested.
+Each notebook provides documentation and explanations of the analysis performed and the models used. You can view the notebooks directly on GitHub or download them to run them locally.
+
+## Data Source
+
+The historical silver price data was imported using Yahoo Finance.
+
+## Dependencies
+
+- Python
+- Jupyter Notebook
+- Pandas
+- Matplotlib
+- Scikit-learn
+- PyCaret
+- TensorFlow (for LSTM model)
+
+## Outcomes
+
+Various machine learning models and one deep learning model was applied to the data. Each trial resulted in different amounts of accuracy for prediction. 
+Ultimately, on using PyCaret, we found that the most suitable method to apply to this particular dataset was Extra Trees Regression; resulting in the highest accuracy for predicting.
